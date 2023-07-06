@@ -234,7 +234,6 @@ Output: 2 4 6 8 10 12 14
 //   }
 // }
 
-
 /*
 ? 12- Write a program that take two integers then print the power
 Example:
@@ -254,7 +253,6 @@ Hint how to calculate 4^3 = 4 * 4 * 4 =64
 //   output *= n;
 // }
 // console.log(output);
-
 
 /*
 ? 12- Write a program to enter marks of five subjects and calculate total, average and 
@@ -278,6 +276,191 @@ Percentage =87
 // for(var i=1; i<=5;i++){
 //   sum += Number(prompt("Enter marks"));
 // }
-// var Avg = sum / 5  ; 
+// var Avg = sum / 5  ;
 // console.log(`Total marks = ${sum}\nAverage Marks = ${Avg}\nPercentage = ${Avg}`);
 
+/*
+? 13-Write a program to input month number and print number of days in that 
+month.
+Example:
+Input: - Month Number: 1
+ Output:-. Days in Month: 31
+*/
+
+// &Answer
+
+// ^ hints
+// There are 7 months that have 31 days and they can be listed as January, March, May, July, August, October, and December.
+// 1,3,5,7,8,10,12
+// There are 4 months that have 30 days and they can be listed as April, June, September, and November.
+// 4,6,9,11
+// feb 28 days or 29
+
+// var monthNumber = 1 * prompt("Enter a month number:");
+// if (
+//   monthNumber == 4 ||
+//   monthNumber == 6 ||
+//   monthNumber == 9 ||
+//   monthNumber == 11
+// ) {
+//   console.log("Days in Month: 30");
+// } else if (monthNumber == 2) {
+//   console.log("Days in Month: 28 or 29");
+// }else{
+//   console.log("Days in Month: 31");
+
+// }
+
+/*
+
+? 14- Write a program to input marks of five subjects
+Physics, Chemistry, Biology, Mathematics and Computer
+, Find percentage and grade 
+Percentage >= 90%: Grad A
+Percentage >= 80%: Grad B
+Percentage >= 70%: Grad C
+Percentage >= 60%: Grad D
+Percentage >= 40%: Grad E
+Percentage < 40%: Grad F
+*/
+
+// &Answer
+
+// var sum = 0;
+
+// for (var i = 1; i <= 5; i++) {
+//   sum += Number(prompt("Enter marks"));
+// }
+// var Avg = sum / 5;
+
+// if (Avg >= 90) {
+//   console.log(`Percentage >= 90%  and = ${Avg}% : Grad A`);
+// } else if (Avg >= 80) {
+//   console.log(`Percentage >= 80%: and = ${Avg}% :Grad B`);
+// } else if (Avg >= 70) {
+//   console.log(`Percentage >= 70%: and = ${Avg}% :Grad C`);
+// } else if (Avg >= 60) {
+//   console.log(`Percentage >= 60%: and = ${Avg}% :Grad D`);
+// } else if (Avg >= 40) {
+//   console.log(`Percentage >= 40%: and = ${Avg}% :Grad E`);
+// } else {
+//   console.log(`Percentage <  40%: and = ${Avg}% :Grad F`);
+// }
+
+// ? 15- Write a program to print total number of days in month
+
+// ^ hints
+// There are 7 months that have 31 days and they can be listed as January, March, May, July, August, October, and December.
+// 1,3,5,7,8,10,12
+// There are 4 months that have 30 days and they can be listed as April, June, September, and November.
+// 4,6,9,11
+// feb 28 days or 29
+
+// & Answer
+
+// var n = 1 * prompt("Enter number of month: ");
+
+// switch (n) {
+//   case 4:
+//   case 6:
+//   case 9:
+//   case 11:
+//     console.log("30 days");
+//     break;
+//   case 2:
+//     console.log("28 or 29 days");
+//     break;
+//   case 1:
+//   case 3:
+//   case 5:
+//   case 7:
+//   case 8:
+//   case 10:
+//   case 12:
+//     console.log("31 days");
+//     break;
+//   default:
+//     console.log("Enter number between 1 : 12 !");
+// }
+
+//?16- Write a program to check whether an alphabet is vowel or consonant
+
+// & Answer
+
+// var ch = prompt("Enter alphabet");
+// switch (ch) {
+//   case "a":
+//   case"i":
+//   case"o":
+//   case"u":
+//   case"e":
+//     console.log("vowel");
+//     break;
+//   default:
+//     console.log("consonant");
+// }
+
+//?17- Write a program to find maximum between two numbers
+
+// var num1=1*prompt("Number 1");
+// var num2=1*prompt("Number 2");
+// var b = num1>num2;
+// switch (b) {
+//   case true:
+//     console.log(`${num1}>${num2} --> max is ${num1}`);
+//     break;
+//   default:
+//     console.log(`${num1}<${num2}--> max is ${num2}`);
+// }
+
+//?18- Write a program to check whether a number is even or odd
+
+// var n = 1*prompt("Enter Number");
+// b = (n%2==0);
+// switch (b) {
+//   case true:
+//     console.log(`${n} is even`);
+//     break;
+//   default:
+//     console.log(`${n} is odd`);
+// }
+
+//?19- Write a program to check whether a number is positive or negative or zero
+
+// var n = 1 * prompt("Enter Number");
+// b = n >= 0;
+// switch (b) {
+//   case true:
+//     if (n == 0) {
+//       console.log(`${n} : zero`);
+//     } else {
+//       console.log(`${n} : positive`);
+//     }
+//     break;
+//   default:
+//     console.log(`${n} : negative`);
+// }
+
+//?20- Write a program to create Simple Calculator
+
+// n1 = 1 * prompt("Enter Number 1");
+// n2 = 1 * prompt("Enter Number 2");
+// op = prompt("Enter operator {+,-,*,/}");
+// switch (op) {
+//   case "+":
+//     console.log(`${n1}+${n2} = ${n1 + n2}`);
+//     break;
+//   case "-":
+//     console.log(`${n1}-${n2} = ${n1 - n2}`);
+
+//     break;
+//   case "*":
+//     console.log(`${n1}*${n2} = ${n1 * n2}`);
+
+//     break;
+//   case "/":
+//     console.log(`${n1}/${n2} = ${n1 / n2}`);
+//     break;
+//   default:
+//     console.log("Enter a valid operation");
+// }
